@@ -10,8 +10,8 @@ fn stylize_name(first: String, last: String) -> String {
             Bold,
             Italic,
         ],
-        color: BlackBright,
-        background_color: RGB(100,55,200),
+        color: Green,
+        background_color: RGB(5,55,100),
     };
 
     let last_name: String = String::from(last);
@@ -21,8 +21,8 @@ fn stylize_name(first: String, last: String) -> String {
             Bold,
             Italic,
         ],
-        color: Green,
-        background_color: RGB(5,55,100),
+        color: RGB(242, 169, 0),
+        background_color: RGB(77, 77, 78),
     };
     format!(
         "{} {}",
@@ -35,8 +35,8 @@ fn main() {
     println!(
         "{}",
         stylize_name(
-            String::from("peter"),
-            String::from("parker"),
+            String::from("Peter"),
+            String::from("Bitcoin!"),
         )
     );
 }
