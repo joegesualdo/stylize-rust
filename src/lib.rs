@@ -8,7 +8,7 @@ pub fn blue(text: String) -> String {
     let params: Vec<SelectGraphicRenditionParameter> = vec![
         //SelectGraphicRenditionParameter::SetForegroundColorParameter(ForegroundColor::BlueForeground),
         SelectGraphicRenditionParameter::SetForegroundColorParameter(
-            ForegroundColor::BlueForeground
+            ForegroundColor::BlueForeground,
         ),
     ];
     let s = format!(
@@ -17,14 +17,14 @@ pub fn blue(text: String) -> String {
         text,
         EscapeSequence::ResetColorsSequence.to_string()
     );
-    return s
+    return s;
 }
 
 pub fn red(text: String) -> String {
     let params: Vec<SelectGraphicRenditionParameter> = vec![
         //SelectGraphicRenditionParameter::SetForegroundColorParameter(ForegroundColor::BlueForeground),
         SelectGraphicRenditionParameter::SetForegroundColorParameter(
-            ForegroundColor::RedForeground
+            ForegroundColor::RedForeground,
         ),
     ];
     let s = format!(
@@ -33,7 +33,7 @@ pub fn red(text: String) -> String {
         text,
         EscapeSequence::ResetColorsSequence.to_string()
     );
-    return s
+    return s;
 }
 
 pub fn test() {
