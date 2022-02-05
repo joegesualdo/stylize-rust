@@ -1,7 +1,5 @@
 use stylize::{self, Modifier, StylizedString, Modifier::*, Color::*};
 
-use stylize::Stylizer;
-
 fn stylize_name(first: String, last: String) -> String {
     let first_name: String = String::from(first);
     let first_name_stylized = StylizedString {
