@@ -45,7 +45,6 @@ impl StylizedString {
                 Modifier::Bold => SelectGraphicRenditionParameter::BoldParameter,
                 Modifier::Italic => SelectGraphicRenditionParameter::ItalicParameter,
                 Modifier::Underline => SelectGraphicRenditionParameter::UnderlineParameter,
-                _ => panic!(),
             })
             .collect();
         let foreground_color_param = match self.color {
