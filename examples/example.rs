@@ -25,6 +25,20 @@ fn stylize_name(first: String, last: String) -> String {
 }
 
 fn main() {
+    let test = StylizedString {
+        text: String::from("test"),
+        modifiers: vec![],
+        color: Default,
+        background_color: Default,
+    };
+    println!(
+        "{}",
+        test.green().red().underline().to_string()
+    );
+    println!(
+        "{}",
+        StylizedString::new("Woowee".to_string()).rgb(5, 255, 32).bg_white_bright().to_string()
+    );
     println!(
         "{}",
         stylize_name(String::from("Peter"), String::from("Bitcoin!"),)

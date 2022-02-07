@@ -37,6 +37,300 @@ pub struct StylizedString {
 }
 
 impl StylizedString {
+    pub fn new(text: String) -> StylizedString {
+        StylizedString {
+            text,
+            modifiers: vec![],
+            color: Color::Default,
+            background_color: Color::Default,
+        }
+    }
+    pub fn green(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::Green,
+            background_color: self.background_color,
+        }
+    }
+    pub fn red(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::Red,
+            background_color: self.background_color,
+        }
+    }
+    pub fn black(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::Black,
+            background_color: self.background_color,
+        }
+    }
+    pub fn yellow(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::Yellow,
+            background_color: self.background_color,
+        }
+    }
+    pub fn blue(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::Blue,
+            background_color: self.background_color,
+        }
+    }
+    pub fn magenta(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::Magenta,
+            background_color: self.background_color,
+        }
+    }
+    pub fn cyan(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::Cyan,
+            background_color: self.background_color,
+        }
+    }
+    pub fn white(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::White,
+            background_color: self.background_color,
+        }
+    }
+    pub fn black_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::BlackBright,
+            background_color: self.background_color,
+        }
+    }
+    pub fn red_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::RedBright,
+            background_color: self.background_color,
+        }
+    }
+    pub fn green_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::GreenBright,
+            background_color: self.background_color,
+        }
+    }
+    pub fn yellow_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::YellowBright,
+            background_color: self.background_color,
+        }
+    }
+    pub fn blue_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::BlueBright,
+            background_color: self.background_color,
+        }
+    }
+    pub fn magenta_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::MagentaBright,
+            background_color: self.background_color,
+        }
+    }
+    pub fn white_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::WhiteBright,
+            background_color: self.background_color,
+        }
+    }
+    pub fn rgb(self, red: u32, green: u32, blue: u32) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: Color::RGB(red, green, blue),
+            background_color: self.background_color,
+        }
+    }
+    pub fn bg_green(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::Green,
+        }
+    }
+    pub fn bg_red(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::Red,
+        }
+    }
+    pub fn bg_black(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::Black,
+        }
+    }
+    pub fn bg_yellow(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::Yellow,
+        }
+    }
+    pub fn bg_blue(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::Blue,
+        }
+    }
+    pub fn bg_magenta(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::Magenta,
+        }
+    }
+    pub fn bg_cyan(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::Cyan,
+        }
+    }
+    pub fn bg_white(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::White,
+        }
+    }
+    pub fn bg_black_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::BlackBright,
+        }
+    }
+    pub fn bg_red_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::RedBright,
+        }
+    }
+    pub fn bg_green_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::GreenBright,
+        }
+    }
+    pub fn bg_yellow_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::YellowBright,
+        }
+    }
+    pub fn bg_blue_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::BlueBright,
+        }
+    }
+    pub fn bg_magenta_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::MagentaBright,
+        }
+    }
+    pub fn bg_white_bright(self) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::WhiteBright,
+        }
+    }
+    pub fn bg_rgb(self, red: u32, green: u32, blue: u32) -> StylizedString {
+        StylizedString {
+            text: self.text,
+            modifiers: self.modifiers,
+            color: self.color,
+            background_color: Color::RGB(red, green, blue),
+        }
+    }
+    pub fn underline(self) -> StylizedString {
+        let mut new_modifiers = self.modifiers;
+        new_modifiers.push(Modifier::Underline);
+        StylizedString {
+            text: self.text,
+            modifiers: new_modifiers,
+            color: self.color,
+            background_color: self.background_color,
+        }
+    }
+    pub fn bold(self) -> StylizedString {
+        let mut new_modifiers = self.modifiers;
+        new_modifiers.push(Modifier::Bold);
+        StylizedString {
+            text: self.text,
+            modifiers: new_modifiers,
+            color: self.color,
+            background_color: self.background_color,
+        }
+    }
+    pub fn italic(self) -> StylizedString {
+        let mut new_modifiers = self.modifiers;
+        new_modifiers.push(Modifier::Italic);
+        StylizedString {
+            text: self.text,
+            modifiers: new_modifiers,
+            color: self.color,
+            background_color: self.background_color,
+        }
+    }
     pub fn to_string(self) -> String {
         let mut params: Vec<SelectGraphicRenditionParameter> = self
             .modifiers
