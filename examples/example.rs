@@ -24,6 +24,14 @@ fn stylize_name(first: String, last: String) -> String {
     )
 }
 
+fn bitcoin_style(text: String) -> String {
+    StylizedString::new(text)
+        .rgb(242, 169, 0)
+        .bg_rgb(77, 77, 78)
+        .bold()
+        .to_string()
+}
+
 fn main() {
     let test = StylizedString {
         text: String::from("test"),
@@ -34,6 +42,10 @@ fn main() {
     println!(
         "{}",
         test.green().red().underline().to_string()
+    );
+    println!(
+        "{}",
+        bitcoin_style(" ₿ We are all Satoshi ₿ ".to_string())
     );
     println!(
         "{}",
