@@ -39,17 +39,14 @@ fn main() {
         color: Default,
         background_color: Default,
     };
+    println!("{}", test.green().red().underline().to_string());
+    println!("{}", bitcoin_style(" ₿ We are all Satoshi ₿ ".to_string()));
     println!(
         "{}",
-        test.green().red().underline().to_string()
-    );
-    println!(
-        "{}",
-        bitcoin_style(" ₿ We are all Satoshi ₿ ".to_string())
-    );
-    println!(
-        "{}",
-        StylizedString::new("Woowee".to_string()).rgb(5, 255, 32).bg_white_bright().to_string()
+        StylizedString::new("Woowee".to_string())
+            .rgb(5, 255, 32)
+            .bg_white_bright()
+            .to_string()
     );
     println!(
         "{}",
