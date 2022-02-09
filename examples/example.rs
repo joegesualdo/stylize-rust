@@ -29,6 +29,7 @@ fn bitcoin_style(text: String) -> String {
         .rgb(242, 169, 0)
         .bg_rgb(77, 77, 78)
         .bold()
+        .underline()
         .to_string()
 }
 
