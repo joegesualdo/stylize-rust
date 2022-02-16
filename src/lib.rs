@@ -8,6 +8,7 @@ pub enum Modifier {
     Italic,
     Underline,
 }
+
 pub enum Color {
     Black,
     Red,
@@ -572,6 +573,7 @@ pub fn yellow(text: String) -> String {
     };
     return stylized_string.to_string();
 }
+
 pub fn magenta(text: String) -> String {
     let stylized_string = StylizedString {
         text,
@@ -581,6 +583,7 @@ pub fn magenta(text: String) -> String {
     };
     return stylized_string.to_string();
 }
+
 pub fn cyan(text: String) -> String {
     let stylized_string = StylizedString {
         text,
@@ -590,6 +593,7 @@ pub fn cyan(text: String) -> String {
     };
     return stylized_string.to_string();
 }
+
 pub fn white(text: String) -> String {
     let stylized_string = StylizedString {
         text,
