@@ -526,6 +526,7 @@ impl Stylizer {
         return s;
     }
 }
+
 pub fn blue(text: String) -> String {
     let stylized_string = StylizedString {
         text,
@@ -555,6 +556,7 @@ pub fn black(text: String) -> String {
     };
     return stylized_string.to_string();
 }
+
 pub fn green(text: String) -> String {
     let stylized_string = StylizedString {
         text,
@@ -564,6 +566,7 @@ pub fn green(text: String) -> String {
     };
     return stylized_string.to_string();
 }
+
 pub fn yellow(text: String) -> String {
     let stylized_string = StylizedString {
         text,
