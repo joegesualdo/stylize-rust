@@ -506,7 +506,7 @@ pub struct Stylizer {
 impl Stylizer {
     pub fn new(text: String) -> Self {
         Stylizer {
-            text: text,
+            text,
             color: ForegroundColor::ForegroundColor(Color256(200)),
         }
     }
