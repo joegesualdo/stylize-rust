@@ -536,7 +536,6 @@ pub fn blue(text: String) -> String {
     };
     return stylized_string.to_string();
 }
-
 pub fn red(text: String) -> String {
     let stylized_string = StylizedString {
         text,
