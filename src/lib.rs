@@ -585,7 +585,6 @@ pub fn magenta(text: String) -> String {
     };
     return stylized_string.to_string();
 }
-
 pub fn cyan(text: String) -> String {
     let stylized_string = StylizedString {
         text,
