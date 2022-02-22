@@ -8,7 +8,6 @@ pub enum Modifier {
     Italic,
     Underline,
 }
-
 pub enum Color {
     Black,
     Red,
