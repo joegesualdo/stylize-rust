@@ -2,13 +2,11 @@ use ansi_escape_codes::{
     BackgroundColor, BrightBackgroundColor, BrightForegroundColor, Color::*, EscapeSequence,
     ForegroundColor, SelectGraphicRenditionParameter,
 };
-
 pub enum Modifier {
     Bold,
     Italic,
     Underline,
 }
-
 pub enum Color {
     Black,
     Red,
